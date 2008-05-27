@@ -1,0 +1,76 @@
+body {
+	font-family: Tahoma, Verdana, Arial;
+	background-color: #e7e7e7;
+	color: #333333;
+}
+a {
+	color: #666666;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.color0 {
+	background-color: #F9F9F9;
+}
+.color1 {
+	background-color: #FFFFFF;
+}
+.color2 {
+	background-color: #CCCCCC;
+}
+.color3 {
+	background-color: #f0f0ee;
+}
+.footer {
+	font-size: 11px;
+	color: #666666;
+}
+.menuPadding {
+	padding-top: 10px;
+	padding-right: 14px;
+	padding-bottom: 12px;
+	padding-left: 14px;
+}
+.TXTmenuTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #1A81E9;
+	padding-top: 5px;
+}
+.TXTtitle {
+	font-size: 20px;
+	color: #A63992;
+}
+.TXTgeneric {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 14px;
+	color: #333333;
+}
+.TXTform {
+	font-size: 12px;
+	font-weight: bold;
+	color: #A63992;
+}
+.TXTlist {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #1A81E9;
+	font-weight:bold;
+}
+.TXTlist a {
+	color: #666666;
+	font-weight:normal;
+}
+.TXTlistDisabled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #cccccc;
+	font-weight:bold;
+}
+.TXTlistDisabled a {
+	color: #dddddd;
+	font-weight:normal;
+}

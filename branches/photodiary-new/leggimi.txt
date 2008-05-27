@@ -1,0 +1,26 @@
+Webgriffe® photoDiary 1.0
+
+
+ITALIANO
+
+Grazie per aver scelto photoDiary 1.0!
+Installare questa applicazione sul tuo server è semplicissimo: bastano 4 click e seguire attentamente le indicazioni fornite.
+
+
+=== Installazione ===
+Per inziare decomprimi il file ZIP e fai l'upload della cartella photoDiary sul tuo server (leggi le specifiche tecniche richieste al punto seguente).
+Poi apri il browser e digita la URL (il path completo) di dove hai installato il photoDiary (ad esempio http://www.tuosito.com/photodiary) e segui le indicazioni.
+
+*** Importante: Al termine dell'installazione ricordati di cancellare il file install.php dalla cartella admin.
+
+=== Requisiti del server ===
+photoDiary necessita di un server con le seguenti caratteristiche:
+- PHP 4.3 o successivi
+- mySQL 4 o successivi
+- GD library per PHP
+
+
+Webgriffe® | multimedia
+-----------------------
+info@webgriffe.com
+www.webgriffe.com
