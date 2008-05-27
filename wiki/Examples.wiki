@@ -1,0 +1,18 @@
+#labels Featured
+= Official Demo =
+
+  * [http://photodiary.webgriffe.com/demo/ Frontend Demo]
+  * [http://photodiary.webgriffe.com/demo/admin/ Backoffice Demo]
+
+
+= Other installed photoDiary =
+
+Here are some known URL where photoDiary is installed and working.
+Feel free to submit the URL of your photoDiary to mail@webgriffe.com
+
+  * [http://www.cristiangalletti.com/photodiary/]
+  * [http://www.alessandroronchi.com/photodiary/]
+  * [http://www.lucianobedeschi.it/]
+  * [http://www.maurogrisendi.com/figure/]
+  * [http://www.giovannibrioni.com/]
+  * [http://www.gabrielefranceschi.it/photodiary_v1/]
