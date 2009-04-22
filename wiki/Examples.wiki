@@ -8,7 +8,6 @@
 = Other installed photoDiary =
 
 Here are some known URL where photoDiary is installed and working.
-Feel free to submit the URL of your photoDiary to mail@webgriffe.com
 
   * [http://www.cristiangalletti.com/photodiary/]
   * [http://www.alessandroronchi.com/photodiary/]
@@ -21,3 +20,5 @@ Feel free to submit the URL of your photoDiary to mail@webgriffe.com
   * [http://www.monicamessori.it/photodiary/]
   * [http://www.minomina.it/]
   * [http://www.gabrieletorricelli.it/]
+
+Feel free to leave a comment below with the URL of your photoDiary.
