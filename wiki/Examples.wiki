@@ -1,5 +1,7 @@
+#summary Demo online and links to other installed photoDiary
 #labels Featured
-= Official Demo =
+
+= Official Online Demo =
 
   * [http://photodiary.webgriffe.com/demo/ Frontend Demo]
   * [http://photodiary.webgriffe.com/demo/admin/ Backoffice Demo]
@@ -18,5 +20,6 @@ Here are some known URL where photoDiary is installed and working.
   * [http://www.monicamessori.it/photodiary/]
   * [http://www.minomina.it/]
   * [http://www.gabrieletorricelli.it/]
+  * [http://i.pinksesa.net/]
 
 Feel free to leave a comment below with the URL of your photoDiary.
