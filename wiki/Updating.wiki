@@ -1,4 +1,5 @@
 #summary Useful instructions about upgrade.
+#labels Featured
 
 In this page you can find useful instructions to update your current version of photoDiary to the latest one.
 
