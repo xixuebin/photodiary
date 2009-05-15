@@ -21,5 +21,6 @@ Here are some known URL where photoDiary is installed and working.
   * [http://www.minomina.it/]
   * [http://www.gabrieletorricelli.it/]
   * [http://i.pinksesa.net/]
+  * [http://www.stefaniaincerti.it/]
 
 Feel free to leave a comment below with the URL of your photoDiary.
