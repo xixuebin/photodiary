@@ -1,4 +1,4 @@
-<?php
+<?
 
 
 // PHOTODIARY
@@ -30,5 +30,8 @@ $FLD['config']['email'] = "tx_email";
 $FLD['config']['username'] = "tx_username";
 $FLD['config']['password'] = "tx_password";
 $FLD['config']['lng'] = "tx_language";
+$FLD['config']['optimize'] = "tx_optimize";
+$FLD['config']['width'] = "nm_width";
+$FLD['config']['height'] = "nm_height";
 
 ?>

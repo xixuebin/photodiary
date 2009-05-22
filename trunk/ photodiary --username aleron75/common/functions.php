@@ -1,4 +1,4 @@
-<?php
+<?
 
 	//Convert date format
 	function dateFormat($date){

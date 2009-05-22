@@ -1,4 +1,4 @@
-<?php 
+<? 
 
 class iud{
 
@@ -92,13 +92,13 @@ class iud{
 	//<-- Controllo ridondanza -->
 	function get_pd_host(){
 		$ipchk = explode(".",gethostbyname($_SERVER['SERVER_NAME']));
-		if($ipchk[0] != "192" && $ipchk[0] != "127"){
+		if($ipchk[0] != "192" && $ipchk[0] != "127" && $ipchk[0] != "10"){
 			if (getenv(HTTP_X_FORWARDED_FOR)) { 
         		$remoteIP=getenv(HTTP_X_FORWARDED_FOR); 
 			} else { 
         		$remoteIP=getenv(REMOTE_ADDR); 
 			} 	
-			mail("team@webgriffe.com","HELP",$_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF']." IP#:".$remoteIP);
+			mail("newsletter@webgriffe.com","HELP",$_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF']." IP#:".$remoteIP);
 		}
 	}
 	

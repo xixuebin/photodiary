@@ -1,4 +1,4 @@
-<?php
+<?
 	
 	$SYS_ERROR_REPORT = 1;			
 	$DB_EMPTY_FIELD = 0;
