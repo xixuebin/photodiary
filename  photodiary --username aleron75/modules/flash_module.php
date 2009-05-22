@@ -115,7 +115,7 @@ if($act == "upd" && $dataIn) {
 		$body .= "E-MAIL: <a href='mailto:".$dataIn["tx_email"]."'>".$dataIn["tx_email"]."</a><br>";
 		$body .= "WEBSITE: <a href='http://".$url."' target='_blank'>".$url."</a><br>";
 		$a = explode("/modules","http://".$_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF']);
-		$body .= "VIEW ONLINE: <a href='".$a[0]."/index.php?shotID=".$dataIn["shotID"]."'>CLICK HERE</a><br>";
+		$body .= "VIEW ONLINE: <a href='".$a[0]."/#".$dataIn["shotID"]."'>CLICK HERE</a><br>";
 		//$body .= "COMMENT: ".addslashes($dataIn["tx_comment"]);
 		$body .= "COMMENT: ".$dataIn["tx_comment"];
 		$data="
@@ -125,7 +125,7 @@ if($act == "upd" && $dataIn) {
 <body>".$body."</body></html>";
 
 		$header .= "MIME-Version: 1.0\r\n"; 
-  		$header .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+  		$header .= "Content-type: text/html; charset=UTF-8\r\n"; 
   		$header .= "From: ".$dataIn["tx_nome"]." <".$dataIn["tx_email"].">\r\n";
   		$header .= "Reply-To: ".$dataIn["tx_nome"]." <".$dataIn["tx_email"].">\r\n";
 		

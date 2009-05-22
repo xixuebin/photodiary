@@ -4,6 +4,8 @@
 	$background = "wide";
 	$conf_state = 0;
 	
+	
+	
 	session_start();
 	
 	if($act=="logout"){ //LOGOUT
@@ -64,6 +66,8 @@
 	}
 	
 	
+$pd_SERVER = explode("admin","http://".$_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF']);
+$photodiary = $pd_SERVER[0];
 ?>
 <html>
 <head>
@@ -148,23 +152,18 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 			} else {
 				while($data = mysql_fetch_array($result_data)){
 					// THUMB MANAGER
-					if(extension_loaded('gd')){
-						$path = "thumb.php?file_path=../shots/".$data[$FLD['posts']['id']].".jpg&destw=80&desth=80";
-						$img_param = "";
-					} else {
-						$img_size= getimagesize("../shots/".$data[$FLD['posts']['id']].".jpg");
-						if($img_size[0]>=$img_size[1]){ // horizontal image
-							$img_param = "width='80'";
-						} else { // vertical image
-							$img_param = "height='80'";
-						}
-						$path = "../shots/".$data[$FLD['posts']['id']].".jpg";
+
+					$img_size= getimagesize($photodiary."shots/".$data[$FLD['posts']['id']].".jpg");
+					if($img_size[0]>=$img_size[1]){ // horizontal image
+						$path = $photodiary."common/thumb/image.php/".$data[$FLD['posts']['id']]."_prev.jpg?width=80&image=".$photodiary."shots/".$data[$FLD['posts']['id']].".jpg";
+					} else { // vertical image
+						$path = $photodiary."common/thumb/image.php/".$data[$FLD['posts']['id']]."_prev.jpg?height=80&image=".$photodiary."shots/".$data[$FLD['posts']['id']].".jpg";
 					}
 					
 ?>	
 			<table width="90%"  border="0" cellspacing="0" cellpadding="6">
 				<tr>
-					<td width="80" align="center" valign="top" class="color0"><a href="index.php?act=edit&id=<?php echo $data[$FLD['posts']['id']]?>"><img src="<?php echo $path ?>" alt="<?php echo $LNG_ALT_EDIT ?>" <?php echo $img_param ?> border="0"></a></td>
+					<td width="80" align="center" valign="top" class="color0"><a href="index.php?act=edit&id=<?php echo $data[$FLD['posts']['id']]?>"><img src="<?php echo $path ?>" alt="<?php echo $LNG_ALT_EDIT ?>" border="0"></a></td>
 					<?php
 					if($data[$FLD['posts']['visible']]==1){
 						$listStyle = "TXTlist";
@@ -267,18 +266,17 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 						<td><table border="0" cellpadding="0" cellspacing="8" class="color1">
 								<tr>
 								<?php
-									if(extension_loaded('gd')){
-										$path = "thumb.php?file_path=../shots/".$data[$FLD['posts']['id']].".jpg&destw=200&desth=1000";
-									} else {
-										$path = "../shots/".$data[$FLD['posts']['id']].".jpg"; 
-									}
-								
+									
+									// THUMB MANAGER
+
+									$path = $photodiary."common/thumb/image.php/".$data[$FLD['posts']['id']]."_mid.jpg?width=200&image=".$photodiary."shots/".$data[$FLD['posts']['id']].".jpg";
 								?>
 								
-									<td><a href="../shots/<?php echo $data[$FLD['posts']['id']] ?>.jpg" target="_blank" ><img src="<?php echo $path ?>" alt="<?php echo $LNG_ALT_IMGSIZE ?>" border="0" width="200"></a></td>
+									<td><a href="../shots/<?php echo $data[$FLD['posts']['id']] ?>.jpg" target="_blank" ><img src="<?php echo $path ?>" alt="<?php echo $LNG_ALT_IMGSIZE ?>" border="0" ></a><a href="../shots/<?php echo $data[$FLD['posts']['id']] ?>.jpg" target="_blank" ></a></td>
 								</tr>
 
-						</table></td>
+						</table>
+						</td>
 					</tr>
 				</table></td>
 				<td width="15">&nbsp;</td>

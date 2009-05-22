@@ -1,9 +1,9 @@
-Webgriffe® photoDiary 1.0
+photoDiary | stick your shots
 
 
 ENGLISH
 
-Thank you for choosing photoDiary 1.0!
+Thank you for choosing photoDiary!
 Installation is easy and only consists of four mouse clicks!
 
 === Installation ===

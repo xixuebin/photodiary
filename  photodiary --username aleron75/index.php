@@ -2,8 +2,6 @@
 
 	include "common/objects.php";
 	
-	$shotID = $_GET['shotID'];
-	
 	// SKIP BEFORE CONFIG.PHP EDITING
 	if(!$DB_CONNECTED){
 ?>
@@ -29,43 +27,57 @@
 	}
 
 ?>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $config_data[$FLD['config']['title']]?> photoDiary</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title><?php echo $config_data[$FLD['config']['title']]?> photoDiary</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <!-- Made by Webgriffe | multimedia -->
+        <!-- Webgriffe is @ http://www.webgriffe.com/ -->
+        <!-- Webgriffe contact: info@webgriffe.com -->
+        
+        <meta content="" />
+        <meta name="keywords" content="" />
 
-<!-- Made by Webgriffe® | multimedia -->
-<!-- Webgriffe is @ http://www.webgriffe.com/ -->
-<!-- Webgriffe contact: info@webgriffe.com -->
-
-<LINK REL="SHORTCUT ICON" HREF="http://www.webgriffe.com/favicon.ico">
-<meta name="copyright" content="Webgriffe&reg; | multimedia">
-<meta name="keywords" content="photoDiary, photography, fotografia, webgriffe, blog, photo, photoblog, weblog, pubblicazione, publish, diary, daily, foto, album, diario, fotografico, commenti, comments, gallery, galleria, portfolio, showcase, mostra">
-<meta name="description" content="Il tuo diario fotografico online. Your photo diary online ">
-<meta name="author" content="Webgriffe&reg; | multimedia - www.webgriffe.com">
-<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	padding:0;
-}
--->
-</style>
-</head>
-<body bgcolor="#666666">
-<script language="javascript">
-AC_FL_RunContent('codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0','width','100%','height','100%','src','swf/device','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','swf/device', 'scale', 'noscale', 'salign', 'lt', 'flashVars', '&shotID=<?php echo $shotID ?>' );
-</script><noscript><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="100%" height="100%" align="middle">
-	<param name="movie" value="swf/device.swf" />
-	<param name="flashVars" value="&shotID=<?php echo $shotID ?>" />
-	<param name="quality" value="high" />
-	<param name="scale" value="noscale" />
-	<param name="salign" value="lt" />
-	<embed src="swf/device.swf" quality="high" scale="noscale" flashVars="&shotID=<?php echo $shotID ?>" salign="lt" width="100%" height="100%" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-	</object></noscript>
-</body>
+        <script type="text/javascript" src="js/swfobject.js"></script>
+        <script type="text/javascript" src="js/swfaddress.js"></script>
+		<script type="text/javascript">
+			var flashvars = {};
+			var params = {};
+			params.scale = "noscale";
+			params.bgcolor = "#222222";
+			params.allowfullscreen = "true";
+			var attributes = {};
+			attributes.id = "flashcontent";
+			swfobject.embedSWF("swf/device.swf", "flashcontent", "100%", "100%", "9.0.45", "swf/expressInstall.swf", flashvars, params, attributes);
+		</script>
+		<style type="text/css">
+            html {
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #flashcontent {
+                height: 100%;
+                font-family:Geneva, Arial, Helvetica, sans-serif;
+                font-size:12px;
+                color:#CCCCCC;
+            }
+        
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #222222;
+            }
+        </style>
+	</head>
+	<body>
+		<div id="flashcontent">
+			<h1>Please install Flash Player</h1>
+			<p>Adobe Flash Player is required to view this site. Click on the following button to install.<a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>
+     </body>
 </html>
 <?php $db->db_close() ?>
